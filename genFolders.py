@@ -1,13 +1,14 @@
 import os
 
-def createFolder(name):
+def createFolder(i):
+    name = f"Day-{i}"
     if not os.path.exists(name):
         os.makedirs(name)
         with open(name + "/description.md", "w") as f:
-            f.write(f"# {name}\n\n## Description\n")
+            f.write(f"# [**Advent of Code 2024 - Day {i}**](https://adventofcode.com/2024/day/{i})\n\n## Description\n")
 
 if __name__ == "__main__":
-    createFolder("Days")
+    os.makedirs("Days")
     os.chdir("Days")
-    for folder in [f"Day-{i}" for i in range(1, 26)]:
-        createFolder(folder)
+    for i in range(1, 26):
+        createFolder(i)
