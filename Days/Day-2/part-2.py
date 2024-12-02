@@ -17,7 +17,6 @@ if __name__ == "__main__":
         safeSolutions = 0
         for i in range(len(item)):
             tmpItem = [item[x] for x in range(len(item)) if x != i]
-            print(tmpItem)
             increasing = tmpItem[1] > tmpItem[0]
             tmpSafe = True
 
@@ -38,7 +37,6 @@ if __name__ == "__main__":
                     break
             if tmpSafe:
                 safeSolutions += 1
-        print(input.index(item) + 1, safeSolutions)
         if safeSolutions >= 1:
             safeCount += 1
     
