@@ -29,7 +29,10 @@ def createFolder(i):
     with open(name + "/example.txt", "w") as f:
         f.write("")
     
-    with open(name + "/main.py", "w") as f:
+    with open(name + "/part-1.py", "w") as f:
+        f.write(pythonTemplate)
+
+    with open(name + "/part-2.py", "w") as f:
         f.write(pythonTemplate)
     
 
