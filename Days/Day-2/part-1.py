@@ -15,9 +15,9 @@ if __name__ == "__main__":
     safe = 0
     for item in input:
         tmpSafe = True
-        increasing = int(item[1]) >= (item[0])
+        increasing = item[1] >= item[0]
         for i in range(len(item) - 1):
-            diff = int(item[i + 1]) - int(item[i])
+            diff = item[i + 1] - item[i]
             
             if increasing and diff <= 0:
                 tmpSafe = False
