@@ -32,5 +32,3 @@ if __name__ == "__main__":
             opSum += opOutput
     
     print(opSum)
-            
-                
